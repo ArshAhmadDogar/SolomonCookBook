@@ -1,0 +1,41 @@
+@{
+    Layout = "_MainLayout";
+}
+
+<br/>
+<br/>
+
+<div class="recepie-div1 container">
+    <div class="dropdown" style="display: inline-block;">
+        <button class="dropbtn ">Category</button>
+        <div class="dropdown-content">
+            <a href="#">Africans</a>
+            <a href="#">Indian</a>
+            <a href="#">Chinese</a>
+        </div>
+    </div>
+    <div style="display: inline-block;">
+        <input type="search"/>
+    </div>
+    <div style="display: inline-block;">
+        <button class="btn3">Search</button>
+    </div>
+</div>
+<br/>
+<br/>
+<br/>
+@Html.ActionLink("Create","CreateRecepie","Home")
+<br/>
+<br/>
+<br/>
+<br/>
+
+@model IEnumerable<SolomonCookBook.Models.Recepies>
+
+@foreach (var item in Model)
+{
+    @item.Recepie_Name
+    <img src="../@item.image_url" width="300px" height="300px">
+    <p>@item.Comments</p>
+}
+

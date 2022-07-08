@@ -1,0 +1,18 @@
+I am test Page, Test me!
+<br/>
+@ViewBag.email
+<br/>
+
+@Html.ActionLink("Signup", "Signup", "Home")
+
+<form method="post" enctype="multipart/form-data">
+    <label for="Image"></label>
+    <br/>
+    <input type="file" name="Img" />
+    <br/><br/>
+    <input type="submit"/>
+</form>
+
+<h1>
+    @ViewBag.Name
+</h1>

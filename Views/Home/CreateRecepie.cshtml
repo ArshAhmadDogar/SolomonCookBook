@@ -1,0 +1,35 @@
+@model SolomonCookBook.Models.RecepieImg
+@{
+    Layout="_MainLayout";
+}
+
+@using(Html.BeginForm("CreateRecepie","Home",FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    
+        @Html.LabelFor(model => model.MyRecepie.Recepie_Name , htmlAttributes: new{@class = "control-label"})
+        @Html.EditorFor(model => model.MyRecepie.Recepie_Name , new{htmlAttributes = new{@class = "form-control"}}) 
+ 
+    
+        @Html.LabelFor(model => model.MyRecepie.Category , htmlAttributes: new{@class = "control-label"})
+        @Html.EditorFor(model => model.MyRecepie.Category , new{htmlAttributes = new{@class = "form-control"}})
+   
+ 
+        @Html.LabelFor(model => model.MyRecepie.video_url , htmlAttributes: new{@class = "control-label"})
+        @Html.EditorFor(model => model.MyRecepie.video_url , new{htmlAttributes = new{@class = "form-control"}})
+
+        @Html.LabelFor(model => model.MyImage.Img , htmlAttributes: new{@class = "control-label"})
+        @Html.EditorFor(model => model.MyImage.Img  , new{htmlAttributes = new{@class = "form-control"}})
+        
+ 
+        @Html.LabelFor(model => model.MyRecepie.Ingredients , htmlAttributes: new{@class = "control-label"})
+        @Html.EditorFor(model => model.MyRecepie.Ingredients , new{htmlAttributes = new{@class = "form-control"}})
+  
+        @Html.LabelFor(model => model.MyRecepie.Comments , htmlAttributes: new{@class = "control-label"})
+        @Html.EditorFor(model => model.MyRecepie.Comments , new{htmlAttributes = new{@class = "form-control"}})
+
+    <br/>
+    
+    <input type="submit" />
+    
+}
+
