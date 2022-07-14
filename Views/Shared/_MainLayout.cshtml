@@ -26,11 +26,11 @@
                         <a class="nav-link nav-link-design" asp-action="Recepies" >Recepies</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-link-design" href="#" >Shop</a>
+                        <a class="nav-link nav-link-design" asp-action="Shop">Shop</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link nav-link-design" href="#" >About</a>
+                        <a class="nav-link nav-link-design" asp-action="About" >About</a>
                     </li>
 
                     <li class="nav-item">
@@ -43,8 +43,10 @@
         </nav>
         
     </header>
-
-            @RenderBody()
+    <div class="container">
+         @RenderBody()
+    </div>
+           
     
   
     <partial name="Footer"/>

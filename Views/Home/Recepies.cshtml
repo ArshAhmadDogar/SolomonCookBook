@@ -31,11 +31,29 @@
 <br/>
 
 @model IEnumerable<SolomonCookBook.Models.Recepies>
+<div class="row container m-0">
+    @foreach( var i in Enumerable.Range(0,10))
+    {   
+        @foreach (var item in Model)
+        {
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../@item.image_url" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">@item.Recepie_Name</h5>
+                        <p class="card-text">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate 
+                            the visual form of a document or a typeface without relying on meaningful content.</p>
+                        <a href='@Url.Action("recepieDetails","Home",new{id=@item.Recepie_ID})' class="btn btn2">Details</a>
+                    </div>
+                </div>
+                <br/>
+                <br/>
+                 
+            </div>
+             
+        }
+    }
+</div>
 
-@foreach (var item in Model)
-{
-    @item.Recepie_Name
-    <img src="../@item.image_url" width="300px" height="300px">
-    <p>@item.Comments</p>
-}
+
 

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "80Hn0SKVHRznf+tstVTuMIwNM9yqxLSlpey40RMkz0I=",
+  "Hash": "N6lJ9kg9oY2Acq1FuwzD0tsFin+S9soSvLzYGB+/7jQ=",
   "Source": "SolomonCookBook",
   "BasePath": "_content/SolomonCookBook",
   "Mode": "Default",
@@ -255,6 +255,23 @@
       "OriginalItemSpec": "wwwroot\\Images\\pexels-devon-rockola-954677.jpg"
     },
     {
+      "Identity": "D:\\DotNet\\SolomonCookBook\\wwwroot\\Images\\pexels-klaus-nielsen-6294402.jpg",
+      "SourceId": "SolomonCookBook",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\DotNet\\SolomonCookBook\\wwwroot\\",
+      "BasePath": "_content/SolomonCookBook",
+      "RelativePath": "Images/pexels-klaus-nielsen-6294402.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\pexels-klaus-nielsen-6294402.jpg"
+    },
+    {
       "Identity": "D:\\DotNet\\SolomonCookBook\\wwwroot\\Images\\pexels-rama-khandkar-2113556.jpg",
       "SourceId": "SolomonCookBook",
       "SourceType": "Discovered",
@@ -287,6 +304,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\toa-heftiba-oQvESMKUkzM-unsplash.jpg"
+    },
+    {
+      "Identity": "D:\\DotNet\\SolomonCookBook\\wwwroot\\Images\\vegs.jpg",
+      "SourceId": "SolomonCookBook",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\DotNet\\SolomonCookBook\\wwwroot\\",
+      "BasePath": "_content/SolomonCookBook",
+      "RelativePath": "Images/vegs.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\vegs.jpg"
     },
     {
       "Identity": "D:\\DotNet\\SolomonCookBook\\wwwroot\\js\\site.js",

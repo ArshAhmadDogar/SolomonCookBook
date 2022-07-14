@@ -1,20 +1,35 @@
-<form method="post">
+@{
+    Layout="_MainLayout";
+}
 
-    <label for="First_name">First Name</label>
-    <input type="text" name="First_name" class="form-control"/>
+<div class="container w-50 mt-5 mb-5" style="background: url('../Images/pexels-klaus-nielsen-6294402.jpg'); background-size:cover;">
+    <h1 style="color:white;">Sign Up</h1><br/><br/>
+    <div class="">
+        <form method="post" >
 
-    <label for="Last_name"> Last Name</label>
-    <input type="text" name="Last_name" class="form-control"/>
+            <label for="First_name" style="color:white;">First Name</label>
+            <input type="text" name="First_name" class="form-control"/><br/>
 
-    <label for="Email">Email</label>
-    <input type="text" name="Email" class="form-control"/>
+            <label for="Last_name" style="color:white;"> Last Name</label>
+            <input type="text" name="Last_name" class="form-control"/><br/>
 
-    <label for="Phone_number">Phone</label>
-    <input type="text" name="Phone_number" class="form-control"/>
+            <label for="Email" style="color:white;">Email</label>
+            <input type="text" name="Email" class="form-control"/><br/>
 
-    <label for="Passwor">Password</label>
-    <input type="text" name="Password" class="form-control"/>
+            <label for="Phone_number" style="color:white;">Phone</label>
+            <input type="text" name="Phone_number" class="form-control"/><br/>
 
-    <input type="submit"/>
+            <label for="Passwor" style="color:white;">Password</label>
+            <input type="text" name="Password" class="form-control"/><br/>
 
-</form>
+            <input type="submit" class="btn2 mb-3" style="float:center;"/><br/>
+            <p style="color:white;">
+                Already Have an Account
+                <span style="margin-left:10px;">
+                    <a style="color: yellow;" asp-action="SignIn">SignIn</a>
+                </span>
+            </p><br/>
+
+        </form>
+    </div>
+</div>

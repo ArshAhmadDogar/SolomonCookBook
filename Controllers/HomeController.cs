@@ -125,4 +125,24 @@ public class HomeController : Controller
         file.CopyTo(stream);
     }
    
+    public ViewResult recepieDetails(int id)
+    {
+        ViewBag.Id = id;
+        var recepie = db.Recepies.Where(x => x.Recepie_ID == id).FirstOrDefault();
+        return View(recepie);
+    }
+
+    public ViewResult Shop()
+    {
+        return View();
+    }
+
+    public ViewResult About()
+    {
+        return View();
+    }
+
+  
+
+
 }
